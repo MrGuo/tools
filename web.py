@@ -5,8 +5,8 @@ import time
 import sys
 import pycurl
 
-#URL="http://ycgoods-inner.baidu.com/ycgoods/api/product_xml"
-URL="http://test.mydev.com/test.php"
+URL="http://ycgoods-inner.baidu.com/ycgoods/api/product_xml"
+#URL="http://test.mydev.com/test.php"
 c = pycurl.Curl()
 c.setopt(pycurl.URL, URL)
 
