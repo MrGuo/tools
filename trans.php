@@ -1,7 +1,5 @@
 <?php
-
 $word = $argv[1];
-
     $url = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule&smartresult=ugc&sessionFrom=https://www.baidu.com/link';
     $postData = array(
         'type' => 'AUTO',
@@ -14,7 +12,6 @@ $word = $argv[1];
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($postData));
     $result = curl_exec($ch);
-
     $ret = json_decode($result, 1);
     echo "\n-------------------------------------\n";
     if (!$ret) {
@@ -30,5 +27,4 @@ $word = $argv[1];
             echo $_value, "\n";
         }
     }
-
     echo "\n-------------------------------------\n";
