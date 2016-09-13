@@ -81,5 +81,3 @@ class DB {
         return $r;
     }
 }
-
-ss
