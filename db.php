@@ -81,3 +81,5 @@ class DB {
         return $r;
     }
 }
+
+test
