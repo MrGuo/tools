@@ -15,12 +15,12 @@ class Config {
 
     public function dbConfig($dbName) {
         $config = array();
-        if ($dbName == 'yanchupiao') {
+        if ($dbName == 'gaoliwei') {
             $config = array(
-                'host' => 'xxx',
-                'port' => 6306,
-                'password' => '',
-                'user' => '', 
+                'host' => '121.42.188.44',
+                'port' => 3306,
+                'password' => 'reader!@',
+                'user' => 'reader', 
             );
         }
         return $config;
@@ -82,4 +82,3 @@ class DB {
     }
 }
 
-test

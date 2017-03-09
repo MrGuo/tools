@@ -11,7 +11,8 @@
  */
 
 //借款总额
-$totalLoanAmount = 1420000;
+//$totalLoanAmount = 1420000;
+$totalLoanAmount = 2000000;
 //折扣
 $discount = 0.9;
 //分期次数
@@ -22,6 +23,7 @@ $loanDate = "2015-05-10";
 $rateHistory = array(
     "2015" => 5.9,
     "2016" => 4.9,
+    "2017" => 4.9,
 );
 
 //已还本金总额
